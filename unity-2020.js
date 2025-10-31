@@ -60,6 +60,10 @@
     window.config.title || console.error(new Error("No title on window.config"));
     var o = Object.assign(i, window.config);
     e.a = o
+    var ld=document.createElement("div");
+ld.id="custom-loader";
+ld.style.cssText="position:fixed;top:0;left:0;width:100%;height:100%;background:#000 url('game_assets/loading.png') center center no-repeat;background-size:contain;z-index:9999;";
+document.body.appendChild(ld);
 }
 , function(n, e, t) {
     "use strict";
